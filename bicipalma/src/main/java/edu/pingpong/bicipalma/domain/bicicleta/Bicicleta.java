@@ -1,4 +1,4 @@
-package domain.bicicleta;
+package edu.pingpong.bicipalma.domain.bicicleta;
 
 public class Bicicleta {
     
