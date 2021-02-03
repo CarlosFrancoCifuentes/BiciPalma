@@ -1,4 +1,4 @@
-package edu.pingpong.bicipalma.domain.tarjetaUsuario;
+package edu.pingpong.bicipalma.domain.tarjetausuario;
 
 public class TarjetaUsuario {
     

@@ -1,8 +1,8 @@
 package edu.pingpong.bicipalma;
 
-import edu.pingpong.bicipalma.domain.bicicleta;
-import edu.pingpong.bicipalma.domain.estacion;
-import edu.pingpong.bicipalma.domain.tarjetaUsuario;
+import edu.pingpong.bicipalma.domain.tarjetausuario.TarjetaUsuario;
+import edu.pingpong.bicipalma.domain.bicicleta.Bicicleta;
+import edu.pingpong.bicipalma.domain.estacion.Estacion;
 
 public class BiciPalma {
 
