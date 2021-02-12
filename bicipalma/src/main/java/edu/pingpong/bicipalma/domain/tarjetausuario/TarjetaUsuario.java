@@ -14,7 +14,7 @@ public class TarjetaUsuario {
         return this.activada;
     }
 
-    void setActivada(boolean activada){
+    public void setActivada(boolean activada){
         this.activada = activada;
     }
 

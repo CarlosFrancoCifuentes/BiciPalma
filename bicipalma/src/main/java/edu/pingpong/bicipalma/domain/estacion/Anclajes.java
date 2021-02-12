@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import edu.pingpong.bicipalma.domain.bicicleta.Bicicleta;
 
-public class Anclajes{
+class Anclajes{
     
     private final Anclaje[] anclajes;
 
