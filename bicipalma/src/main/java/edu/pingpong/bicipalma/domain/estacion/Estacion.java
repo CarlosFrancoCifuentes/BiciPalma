@@ -21,11 +21,11 @@ public class Estacion {
     }
 
     private Anclajes[] getAnclajes(){
-        return 
+        return ;
     }
 
     @Override
     public String toString(){
-        ;
+        return null;
     }
 }
