@@ -1,19 +1,39 @@
-package edu.pingpong.bicipalma;
+package edu.pingpong.bicipalma.domain.estacion;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
 import edu.pingpong.bicipalma.domain.bicicleta.Bicicleta;
-import edu.pingpong.bicipalma.domain.estacion.Anclajes;
+import edu.pingpong.bicipalma.BiciPalma;
 
 public class AnclajeTest {
-    
+
     @Test
-    public void getBiciTest(){
-        Bicicleta bici = new Bicicleta(3);
-        assertEquals(3, Anclaje.getBici());
+    public void anclarBiciTest() {
+        Anclaje anclaje = new Anclaje();
+        anclaje.anclarBici(new Bicicleta(911));
+        assertTrue(anclaje.isOcupado());
     }
 
+    @Test
+    public void getBiciTest() {
+        Anclaje anclaje = new Anclaje();
+        anclaje.anclarBici(new Bicicleta(911));
+        assertTrue(anclaje.isOcupado());
+        anclaje.getBici();
+        assertTrue(anclaje.isOcupado());
+    }
+
+    @Test
+    public void liberarBiciTest() {
+        Anclaje anclaje = new Anclaje();
+        anclaje.anclarBici(new Bicicleta(911));
+        assertTrue(anclaje.isOcupado());
+
+        anclaje.liberarBici();
+        assertFalse(anclaje.isOcupado());        
+    }
     
 }
