@@ -1,5 +1,7 @@
 package edu.pingpong.bicipalma;
 
+import edu.pingpong.bicipalma.domain.estacion;
+
 import org.junit.Test;
 
 public class AnclajesTest {
